@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Blinker&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="/css/loginpage.css">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <title>Contact Manager: Login</title>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="/">
+        <img src="/images/iconmonstr-phone-9-64.png" width="30" height="30" alt="">
+        Contact Manager
+    </a>
+</nav>
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="alert alert-danger hidden" role="alert" id="alertBox">
+        </div>
+        <div class="alert alert-success hidden" role="alert" id="successBox">
+        </div>
+        <div class="card">
+            <header class="card-header">
+                <a onclick="toggle()" class="float-right btn btn-outline-primary mt-1" id="formButton">Sign
+                    Up</a>
+                <h4 class="card-title mt-2" id="formHeader">Log In</h4>
+            </header>
+            <article class="card-body">
+                <form>
+                    <div class="form-row">
+                        <div class="col form-group">
+                            <label>User Name </label>
+                            <input type="text" class="form-control" id="userName" placeholder="">
+                        </div> <!-- form-group end.// -->
+                    </div> <!-- form-row end.// -->
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input class="form-control" type="password" id="password">
+                    </div> <!-- form-group end.// -->
+                    <div class="form-group">
+                        <button type="button" class="btn btn-primary btn-block" id="formSubmitButton"
+                                onclick="submitData()"> Log In
+                        </button>
+                    </div>
+                </form>
+            </article> <!-- card-body end .// -->
+        </div> <!-- card.// -->
+    </div> <!-- col.//-->
+</div> <!-- row.//-->
+</body>
+<script type="text/javascript" src="/js/login.js"></script>
+</html>
