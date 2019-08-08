@@ -4,7 +4,7 @@ To Start The Application Via PM2
 
 1. Edit the `ecosystem.config.js` and add Necessary Environment Variables.
 2. Execute the Scripts in `db_scripts/db_script_v1.sql`
-3. `pm2 start ecosystem.config.js --envdev`
+3. `pm2 start ecosystem.config.js --env=dev`
 
 To start The Application Via Node.
 1. `KEY=VALUE node src/main/app/Application.js`
