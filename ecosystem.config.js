@@ -14,14 +14,14 @@ module.exports = {
         },
         env_dev           : {
             NODE_ENV            : 'development',
-            MYSQL_HOST          : 'localhost',
-            MYSQL_USER          : 'webaroo',
-            MYSQL_PASSWD        : 'webar00',
-            MYSQL_DB            : 'contactmanager',
+            MYSQL_HOST          : '',
+            MYSQL_USER          : '',
+            MYSQL_PASSWD        : '',
+            MYSQL_DB            : '',
             MYSQL_MAX_CONNECTION: 10,
             JWT_SECRET          : "JWT_SECRET_!@#",
             MAX_FILE_SIZE_BYTES : 500000,
-            FILE_UPLOAD_PATH    : "./profileImages/"
+            FILE_UPLOAD_PATH    : ""
         }
     }]
 };
