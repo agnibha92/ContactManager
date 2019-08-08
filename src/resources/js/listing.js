@@ -115,6 +115,8 @@ function populateAnalytics(contactId) {
          .done(analyticsData => {
              let labels = [];
              let data = [];
+             $("#views").html(analyticsData.total);
+             $("#viewContainer").show();
              analyticsData.dailyAnalytics.forEach(dailyAnalytic => {
                  labels.push(new Date(dailyAnalytic.onDate).toLocaleDateString());
                  data.push(dailyAnalytic.count);
@@ -185,6 +187,7 @@ function populateModal(data) {
 
 function resetModal() {
     document.getElementById("modalForm").reset();
+    $("#viewContainer").hide();
     $('#imagePreview').css('background-image', "url('/images/no_image.jpg')");
     if (chart && chart instanceof Chart) {
         chart.destroy();
